@@ -1,0 +1,386 @@
+
+#menu-item{
+  text-decoration: none;
+}
+/* navbar */
+nav{
+  background: #cf9319;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color:wheat;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+nav ul li a{
+  color:black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+ 
+}
+a.active, a:hover{
+  background: burlywood;
+  transition: .7s;
+  text-decoration: none;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+#check{
+  display: none;
+}
+@media (max-width:952px){
+  label.logo{
+    
+    font-size: 30px;
+    padding-left: 50px;
+   
+  }
+  nav ul li a{
+    font-size: 16px;
+
+  }
+  nav ul li {
+    display:block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+  }
+  
+
+}
+@media (max-width:858px){
+  .checkbtn{
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    
+    top:80px;
+    left:0px;
+    text-align: center;
+  }
+
+}
+.dropdown{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  left: 52px;
+  top: 100%;
+  
+}
+.sousmenu:hover .dropdown{
+  width: 50%;
+  display: block;
+}
+.dropdown a {
+float: none;
+color: #2C3A47;
+padding: 8px;
+text-decoration: none;
+display: block;
+text-align: center;
+}
+.drop{
+  position: relative
+}
+.voit-img{
+  width: 200;
+  height: 100px;
+}
+.fav-item{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  text-align: center;
+  overflow: hidden;
+  
+}
+.btns{
+  display: flex;
+  justify-content:space-between;
+  margin: 20px 0;
+ width: 40px;
+}
+
+.contact-title{
+  font-family: sans-serif;
+  margin-top: 50px;
+  color: darkslategray;
+  text-transform: capitalize;
+  transition: all 8s ease-in-out;
+  text-align: center;
+
+}
+.contact-title h1{
+  font-size: 32px;
+}
+.contact-title h2{
+  font-size: 16px;
+}
+/* .loginbig{
+  background: #3498db;
+} */
+.login{
+  padding: 40px;
+  width: 340px;
+  margin: auto;
+  margin-top: 50px;
+  background: black;
+  height: 300px;
+}
+
+/* css form register*/
+.form-register{
+  width: 500px;
+  margin: 4px auto ;
+  text-align: center;
+}
+.form-register h1{
+  color: #3B3B98;
+  font-size: 30px;
+  font-family: fantasy;
+}
+.btn-btn{
+  box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.btn-add{
+ 
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+
+}
+.btn-btn:hover{
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.input-reg  {
+  border:none;
+  border-bottom: 2px solid steelblue;
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  color:#2C3A47;
+  
+}
+/*carousel*/
+.carou{
+  height: 500px;
+}
+.footer{
+  background: #4834d4;
+  color:white;}
+  .acceuil{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info{
+    margin-left: 100px;
+    
+  }
+  .acceuil-ann-client{
+    border-radius: 5px;
+    background-color: #dcdde1;
+    padding: 10px;
+    width: 80%;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0.9;
+  }
+  .acceuil-ann-client:hover{
+    opacity: 1;
+  }
+
+  .text-flip{
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+  }
+  .annonce-flip{
+   margin-top: 5px;
+  }
+  .annonce-flip:hover{
+    box-shadow: 5px 10px 13px #7f8fa6;
+    transform: scale(1.04);
+    cursor: pointer;
+
+  }
+  .annonce-flip2:hover{
+    box-shadow: 5px 10px 13px #7f8fa6;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .img1{
+    width: 100%;
+    height: 300px;
+  }
+  .about{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .paragraphe{
+    font-family:monospace;
+    text-align: justify;
+    padding-top: 60px;
+    padding-right: 20px;
+    color: #ada9b4;
+  }
+  .imgabout{
+    height: 350px;
+    border-radius: 4px;
+    margin:10px;
+  }
+  .Aboutus{
+    text-align: center;
+    margin: 20px;
+    color: 	#DAA520;
+    font-size: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+  }
+  hr{
+    width: 60px;
+    background-color: #DAA520	;
+   
+  }
+  .aboutTop{
+    margin-bottom: 50px;
+  }
+  .scroll-image-background{
+    background-image: url("https://image.freepik.com/photos-gratuite/boite-carton-rectangulaire-dans-mains-feminines-vue-dessus_134398-4576.jpg");
+    background-attachment: fixed;
+    height: 600px;
+    background-size: cover;
+
+  }
+  .scroll-image-background1{
+    background-image: url("https://image.freepik.com/photos-gratuite/proprietaire-entreprise-travaillant-au-bureau-domicile_1150-11614.jpg");
+    background-attachment: fixed;
+    height: 600px;
+    background-size: cover;
+  }
+  .scrollp{
+    text-align: center;
+    padding-top: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-transform: uppercase;
+   font-weight: 600;
+   color: #cda148;
+  }
+  span{
+   font-weight:bold;
+   font-family:   Verdana, Geneva, Tahoma, sans-serif;
+   text-transform: uppercase;
+   color: #dda431;
+   font-size: 2rem;
+  }
+  .contact-display{
+    display: flex;
+    justify-content: space-around;
+  }
+  .Contact-parag{
+    text-align: center;
+    margin: 50px;
+    color: #b37907;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .btn-contact{
+    background-color: rgb(158, 109, 12) ;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+  }
+  .test{
+    color: rgb(138, 102, 31) ;
+  }
+  .parag-services{
+    text-align: center;
+    margin: 50px;
+    color: #b37907;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .couleuratt{
+    background-color: khaki;
+  }
+  .couleuracc{
+    background-color: lightgreen;
+  }
+  .login-form{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+  }
+  .contact-form{
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+  }
+  .message-contact{
+    width: 100%;
+  }
